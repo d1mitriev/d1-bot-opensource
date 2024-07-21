@@ -4,12 +4,13 @@
   "description": "Create for d!design",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "index.js"
   },
   "author": "d1mitriev",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^14.15.3"
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "eslint": "^9.7.0"
