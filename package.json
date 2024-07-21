@@ -1,0 +1,11 @@
+{
+  "name": "disell",
+  "version": "0.0.0",
+  "description": "Create for d!design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "d1mitriev",
+  "license": "ISC"
+}
