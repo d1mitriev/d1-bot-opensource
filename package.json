@@ -4,13 +4,20 @@
   "description": "Create for d!design",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js"
+    "lint": "eslint .",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "deploy-commands": "node deploy-commands.js",
+    "delete-commands": "node delete-commands.js",
+    "restart-commands": "node delete-commands.js & node deploy-commands.js"
   },
   "author": "d1mitriev",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.15.3",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "glob": "^11.0.0",
+    "nodemon": "^3.1.4"
   },
   "devDependencies": {
     "eslint": "^9.7.0"
