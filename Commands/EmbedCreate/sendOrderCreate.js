@@ -10,6 +10,8 @@ module.exports = {
     async execute(interaction) {
         console.log("debug");
         try {
+
+            await interaction.deferReply({ ephemeral: true });
             const actionOrderRow = new ActionRowBuilder()
                 .addComponents(
                     new ButtonBuilder()
