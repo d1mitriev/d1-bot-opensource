@@ -24,7 +24,7 @@ restart-commands(node delete-commands.js & node deploy-commands.js)
 - [x] ~~Add Module "Embed Create"~~
 - [ ] Add module "Ticket System witch Order"
 - [ ] Add module Chat Assistant for "Ticket System witch Order"
-> **Now working on "Module system" for platform Discord;**
+> **Now do working on the module "Connect DB(MongoDB)" for bot in platform Discord;**
 
 ![https://ibb.co/wLnhTRD](First moment in live bot)
 
