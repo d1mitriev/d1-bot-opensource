@@ -26,5 +26,5 @@ restart-commands(node delete-commands.js & node deploy-commands.js)
 - [ ] Add module Chat Assistant for "Ticket System witch Order"
 > **Now do working on the module "Connect DB(MongoDB)" for bot in platform Discord;**
 
-[https://ibb.co/wLnhTRD](First moment in live bot)
+![First moment in live bot](https://ibb.co/wLnhTRD)
 
