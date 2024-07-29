@@ -20,10 +20,13 @@ delete-commands(node delete-commands.js) - delete commands,
 restart-commands(node delete-commands.js & node deploy-commands.js)
 
 #What next be Developing?
-- [x] ~~Add "Module System"~~
-- [x] ~~Add Module "Embed Create"~~
-- [ ] Add module "Ticket System witch Order"
-- [ ] Add module Chat Assistant for "Ticket System witch Order"
+- [x] ~~Add "Module System";~~
+- [x] ~~Add Module "Embed Create";~~
+- [x] ~~Connect DB(MongoDB);~~
+- [ ] Add module "Ticket System witch Order";
+- [ ] Add module Chat Assistant for "Ticket System witch Order", owner on polling vote customer;
+- [ ] Add General System Bot (Discord + Telegram) - Create restAPI;
+- [ ] Module for translate message on another language.;
 > **Now do working on the module "Connect DB(MongoDB)" for bot in platform Discord;**
 
 ![First moment in live bot](https://ibb.co/wLnhTRD)
