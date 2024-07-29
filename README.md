@@ -1,7 +1,11 @@
 # disells-bot-opensource
 
-
-# Strating bot:
+# Strating bot for server:
+```
+npm i
+npm rum start
+```
+# Strating bot for production:
 ```
 npm i
 npm rum dev
