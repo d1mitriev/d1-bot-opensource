@@ -5,7 +5,7 @@
 npm i
 npm rum start
 ```
-# Strating bot for production:
+## Strating bot for production:
 ```
 npm i
 npm rum dev
@@ -18,11 +18,12 @@ DISCORD_GUILD_ID=GulidId
 DATABASE_MONGODB=linkDB
 ```
 
-Manipulation on the commands:
+## Manipulation on the commands:
+```
 deploy-commands(node deploy-commands.js) - deploy commands,
 delete-commands(node delete-commands.js) - delete commands,
 restart-commands(node delete-commands.js & node deploy-commands.js)
-
+```
 # What next be Developing?
 - [x] ~~Add "Module System";~~
 - [x] ~~Add Module "Embed Create";~~
