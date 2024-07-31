@@ -8,27 +8,24 @@ module.exports = {
         .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
         .setDMPermission(false),
     async execute(interaction) {  
-        console.log("debug");
         try {
-
-            await interaction.deferReply({ ephemeral: true });
-            const actionOrderRow = new ActionRowBuilder()
-                .addComponents(
-                    new ButtonBuilder()
-                        .setEmoji('1266502794903552031')
-                        .setCustomId('listOfProducts')
-                        .setLabel('・Order Design')
-                        .setStyle(ButtonStyle.Success),
-                    new ButtonBuilder()
-                        .setURL('https://discord.com/channels/1264233125567926352/1264909318671695952')
-                        .setLabel('・Portfolio')
-                        .setStyle(ButtonStyle.Link),
-                    new ButtonBuilder()
-                        .setEmoji('1266510032405659698')
-                        .setCustomId('socialShare')
-                        .setLabel(' ')
-                        .setStyle(ButtonStyle.Secondary),
-                );
+            const selectMenu = new StringSelectMenuBuilder()
+			.setCustomId('listProducts')
+			.setPlaceholder('Select a category...')
+			.addOptions(
+                new StringSelectMenuOptionBuilder()
+                    .setLabel('Bulbasaur')
+                    .setDescription('The dual-type Grass/Poison Seed Pokémon.')
+                    .setValue('bulbasaur'),
+                new StringSelectMenuOptionBuilder()
+                    .setLabel('Charmander')
+                    .setDescription('The Fire-type Lizard Pokémon.')
+                    .setValue('charmander'),
+                new StringSelectMenuOptionBuilder()
+                    .setLabel('Squirtle')
+                    .setDescription('The Water-type Tiny Turtle Pokémon.')
+                    .setValue('squirtle'),
+            );
             
             const embedOderImage = new EmbedBuilder()
                 .setColor(config.DISCORD_COLOR_PRIMARY)
@@ -39,12 +36,11 @@ module.exports = {
                 .setTitle('Buy Design')
                 .setDescription('Buy or GAY');
 
-            await interaction.channel.send({
+            return await interaction.channel.send({
                 embeds: [embedOderImage, embedOdertext],
                 components: [actionOrderRow],
+                ephemeral: true
             });
-
-            return await interaction.editReply('Successfully sent embed in chat!');
         }
         catch (error) {
             console.error(error);

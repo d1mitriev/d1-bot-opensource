@@ -19,7 +19,15 @@ module.exports = {
                 return interaction.reply('Please select a valid text channel.')
             } else {
                 const channel = interaction.options.getChannel('channel');
-                channel.send({ content:'Admin panel has been created here!'})
+
+                const actionRowAdmin = new ActionRowBuilder()
+            .addComponents(
+                new ButtonBuilder()
+                    .setLabel('・Managment Order')
+                    .setStyle(ButtonStyle.Secondary)
+                    .setCustomId(`managmentOrder`),
+            );
+                await channel.send({ content:'Admin panel has been created here!', components: [actionRowAdmin] })
             }
 
             const actionRow = new ActionRowBuilder()

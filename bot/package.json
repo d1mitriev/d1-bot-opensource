@@ -16,8 +16,11 @@
   "dependencies": {
     "discord.js": "^14.15.3",
     "dotenv": "^16.4.5",
+    "events": "^3.3.0",
     "glob": "^11.0.0",
     "mongodb": "^6.8.0",
+    "mongoose": "^8.5.1",
+    "node-fetch": "^3.3.2",
     "nodemon": "^3.1.4"
   },
   "devDependencies": {

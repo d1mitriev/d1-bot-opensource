@@ -3,11 +3,11 @@ const loadFiles = require('../Functions/fileLoader.js');
 async function commandHandler(client) {
 	try {
 		const commandFiles = await loadFiles('Commands');
-		console.log(`Found command files: ${commandFiles}`);
+		// console.log(`Found command files: ${commandFiles}`);
 
 		for (const file of commandFiles) {
 			const command = require(file);
-			console.log(`Loading command from file: ${file}`);
+			// console.log(`Loading command from file: ${file}`);
 
 			if ('data' in command) {
 				client.commands.set(command.data.name, command);

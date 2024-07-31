@@ -2,6 +2,8 @@ require('dotenv').config();
 
 const eventHandler = require('./Handlers/eventHandler');
 const commandHandler = require('./Handlers/commandHandler');
+const MongoProvider = require('./mongoProvider');
+const mongoProvider = new MongoProvider();
 
 const { Client, Collection, GatewayIntentBits, Partials } = require('discord.js');
 const client = new Client({ 
@@ -51,7 +53,7 @@ const client = new Client({
 client.commands = new Collection();
 client.cooldowns = new Collection();
 
-eventHandler(client);
+eventHandler(client, MongoProvider);
 commandHandler(client);
 
 client.setMaxListeners(0);
