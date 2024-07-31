@@ -28,6 +28,8 @@ restart-commands(node delete-commands.js & node deploy-commands.js)
 - [x] ~~Add "Module System";~~
 - [x] ~~Add Module "Embed Create";~~
 - [x] ~~Connect DB(MongoDB);~~
+- [x] ~~Add Category manage~~
+- [ ]  Add manage Product
 - [ ] Add module "Ticket System witch Order";
 - [ ] Add module Chat Assistant for "Ticket System witch Order", owner on polling vote customer;
 - [ ] Add General System Bot (Discord + Telegram) - Create restAPI;
